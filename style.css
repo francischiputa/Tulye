@@ -1,0 +1,497 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: white;
+
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1),
+    -webkit-transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.about-us {
+  color: hsl(120, 92%, 39%);
+  align-items: center;
+  height: 2.5rem;
+  padding-left: 36rem;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem 0 3.2rem;
+  margin: auto;
+}
+/* SECTION HERO */
+.section-hero {
+  background-color: #161515;
+  padding: 2rem 0 4.6rem 0;
+}
+.hero {
+  max-width: 90rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  /* align-items: center; */
+  gap: 2rem;
+}
+.hero-text-box {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.heading-primary {
+  color: orange;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+}
+.hero-description {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 12px;
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+/* TESTIMONIALS */
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
+  padding: 1.8rem;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.085);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
+
+  border-radius: 100px;
+}
+.tag--vegetarian {
+  background-color: #51cf65;
+}
+.tag--vegan {
+  background-color: #94d52c;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.meal-attribute {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.meal-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: orange;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.heading-tertiary-diet {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+/************************/
+
+/*TESTIMONIAL SECTION*/
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 3.6rem;
+}
+
+.testimonials {
+  padding: 2rem 5rem 5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 4.4rem;
+}
+.subheading {
+  font-size: 1.8rem;
+  color: orange;
+  text-transform: uppercase;
+  text-align: bold;
+}
+.subheading-2 {
+  font-size: 1.2rem;
+  color: green;
+  text-align: bold;
+}
+.subheading-3 {
+  font-size: 1.2rem;
+  color: orange;
+  text-align: bold;
+}
+.heading-secondary-testimonials {
+  font-size: 1.6rem;
+  margin-bottom: 3.4rem;
+  color: #161515;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.testimonial-name {
+  font-size: 1.2rem;
+  color: #666;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  padding: 1.2rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/************************/
+/* SECTION FEATURE */
+.feature-section {
+  background-color: #161515;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem 0 3.2rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 5.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2.4rem;
+}
+.feature-text {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.feature-title {
+  color: green;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: bold;
+  margin-bottom: 1.2rem;
+}
+
+.feature-icon {
+  color: orange;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  justify-content: left;
+
+  background-color: #fdf2e9;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+/* FOOTER */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: black;
+}
+
+.nav-link {
+  margin: 2px;
+  padding: 3px;
+  background-color: #000000;
+}
+.top-bar {
+  background-color: #000000;
+}
+.menu-text {
+  background: black;
+  color: white;
+}
+.link {
+  color: white;
+}
+.top-bar-left {
+  background-color: black;
+}
+.nav-link:hover {
+  background-color: hsl(120, 92%, 39%);
+}
+.menu-text:hover {
+  background-color: hsl(120, 92%, 39%);
+}
+
+/* showcase*/
+.container {
+  background: url("Images/The-Best-Food-In-The-World-By-Country-1.png");
+  background-attachment: fixed;
+  background-position: cover;
+
+  width: 100%;
+  height: 600px;
+}
+.sign-up {
+  width: 180px;
+  height: 70px;
+  margin: 30%;
+  margin-top: 10px;
+  margin-left: 12%;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: hsl(120, 92%, 39%);
+  color: white;
+  cursor: pointer;
+}
+
+.tody-special {
+  text-align: center;
+  padding: 12px;
+}
+.flex-container {
+  margin-top: 54px;
+}
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.catch {
+  color: hsl(120, 92%, 39%);
+  margin-left: 50px;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+.btn-cart {
+  color: white;
+  cursor: pointer;
+  background-color: none;
+}
+.button {
+  background-color: green;
+  margin: 7px;
+  padding: 7px;
+}
+
+#for-less {
+  color: rgb(238, 138, 24);
+  padding-left: 20px;
+}
+.have-it {
+  color: green;
+}
+.checked {
+  color: orange;
+}
+span {
+  margin: 5px;
+}
+h4,
+h6 {
+  margin: 5px;
+}
+.images {
+  width: 480px;
+  height: 282;
+}
+@media screen and (max-width: 800px) {
+  .cards {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+#col {
+  background-color: blue;
+  border: solid;
+}
+#sign-div {
+  background: url("Images/Butter-Chicken-.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-size: contain;
+  background-size: cover;
+  background-size: 100%;
+}
+
+form {
+  margin-top: 50px;
+  text-align: end;
+  position: relative;
+
+  left: 60%;
+  top: 20%;
+  margin-top: 20px;
+  display: block;
+  text-align: end;
+  align-items: end;
+  width: 350px;
+  height: 650px;
+  color: white;
+}
+.input {
+  position: relative;
+  left: 35%;
+  width: 100%;
+  margin-top: 9%;
+  background: transparent;
+  border-style: none;
+  outline-style: none;
+  border-bottom: solid white;
+}
+button {
+  height: 50px;
+  width: 100px;
+  margin-top: 9%;
+  background-color: green;
+  color: white;
+  border-radius: 30%;
+}
+form h2 {
+  border-bottom: 7px solid green;
+  margin-bottom: 8px;
+}
+.input-btn {
+  width: 50%;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.card-divider {
+  color: white;
+}
+#footer {
+  background-color: black;
+  background-size: contain;
+  background-image: cover;
+  color: white;
+  margin-top: 0px;
+  height: 220px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.col-footer {
+  width: 25%;
+  padding: 0 15px;
+}
+#tulye {
+  color: white;
+  cursor: pointer;
+}
+#social {
+  color: white;
+  font-size: 18px;
+}
+#sub-footer {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+h4 {
+  border-bottom: 7px solid green;
+}

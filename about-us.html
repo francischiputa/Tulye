@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Tulye Restaurant" content="tulye online Restaurant" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulye Restaurant</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu{
+        background:black;
+        
+        
+      }
+
+      .nav-link{
+        margin: 2px;
+        padding: 3px;
+        background-color: #000000;
+        
+        
+        
+        
+      }
+      .top-bar{
+          background-color:#000000;
+      }
+      .menu-text{
+          background: black;
+          color: white;
+      }
+      .link{
+        color: white;
+      }
+      .top-bar-left{
+        background-color: black;
+      }
+      .nav-link:hover{
+        background-color:hsl(120, 92%, 39%);
+        
+      }
+      .menu-text:hover{
+          background-color: hsl(120, 92%, 39%);;
+      }
+    
+      /* showcase*/
+      .container{
+        
+            background: url("Images/The-Best-Food-In-The-World-By-Country-1.png");
+            background-attachment: fixed;
+            background-position: cover;
+          
+            width: 100%;
+            height: 600px;
+      }
+     .sign-up{
+        width: 180px;
+        height: 70px;
+        margin: 30%;
+        margin-top:10px;
+        margin-left: 12%;
+        padding: 12px;
+        border-radius: 15px;
+        background-color:hsl(120, 92%, 39%);
+        color: white;
+        cursor: pointer;
+     }
+     
+     .tody-special{
+        text-align: center;
+        padding: 12px;
+     }
+     .flex-container{
+        margin-top: 54px;
+     }
+     .cards{
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       position: relative;
+       
+     }
+    
+    .catch{
+      color:hsl(120, 92%, 39%);
+      margin-left: 50px;
+      padding-left: 60px;
+      padding-top: 80px;
+      
+      
+      
+    }
+    .btn-cart{
+      color: white;
+      cursor: pointer;
+      background-color: none;
+    }
+    .button{
+        background-color: green;
+        margin: 7px;
+        padding: 7px;
+    }
+
+    #for-less{
+        color: rgb(238, 138, 24);
+        padding-left: 20px;
+    }
+    .have-it{
+      color: green;
+    }
+    .checked{
+      color: orange;
+    }
+    span{
+        margin: 5px;
+    }
+    h4,h6{
+        margin: 5px;
+    }
+    .images{
+        width: 480px;
+        height: 282;
+    }
+    @media screen and (max-width: 800px) {
+  .cards{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+#col{
+    background-color: blue;
+    border: solid;
+}
+#sign-div{
+    background: url('Images/Butter-Chicken-.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-size: contain;
+    background-size: cover;
+    background-size: 100%;
+    
+        
+    
+}
+
+form{
+    margin-top: 50px;
+    text-align: end;
+    position: relative;
+    
+    left: 60%;
+    top: 20%;
+    margin-top: 20px;
+    display: block;
+    text-align: end;
+    align-items: end;
+    width: 350px;
+    height: 650px;
+    color: white;
+    
+    
+      
+}
+.input{
+    position: relative;
+    left: 35%;
+    width: 100%;
+    margin-top: 9%;
+    background: transparent;
+    border-style: none;
+    outline-style: none;
+    border-bottom: solid white;
+   
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-top: 9%;
+    background-color: green;
+    color: white;
+    border-radius: 30%;
+}
+form h2{
+      border-bottom: 7px solid green;
+      margin-bottom: 8px;
+}
+.input-btn{
+          width: 50%;
+          border-radius: 5%;
+          cursor: pointer;
+}
+.card-divider{
+      color: white;
+}
+#footer{
+  background-color: #181a1a;
+  background-size: contain;
+  background-image: cover;
+  color: white;
+  margin-top: 0px;
+  height: 220px;
+  width: 100%;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.col-footer{
+    width: 25%;
+    padding: 0 15px;
+
+}
+#tulye{
+      color: white;
+      cursor: pointer;
+}
+#social{
+      color: white;
+      font-size: 18px;
+}
+#sub-footer{
+      color: white;
+      font-size: 18px;
+      font-weight: 100;
+}
+h4{
+  border-bottom: 7px solid green;
+}
+.about{
+     background-color: black;
+     color: green;
+     text-align: center;
+     margin: 0px;
+     padding: 0px;
+}
+    </style>
+
+  </head>
+  <body>
+    
+    <main>
+      <div id="top-bar" class="top-bar">
+        <!--Toggle Menu-->
+        <div class="top-bar-title">
+          <span data-responsive-toggle="main-nav" data-hide-for="">
+            <button class="menu-icon align-right" type="button" data-toggle="main-nav"></button>
+          </span>
+         
+        </div>
+        <div id="left" class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">
+              <a href="#" class="link">Tulye Restaurant</a>
+            </li>
+          </ul>
+        </div>
+      <div id="main-nav">
+        <div id="right" class="top-bar-right">
+          <ul class="menu vertical medium-horizontal">
+            <li class="nav-link">
+              <a href="index.html" class="link">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="menu.html" class="link">Menu</a>
+            </li>
+            <li class="nav-link">
+              <a href="about-us.html" class="link">About Us</a>
+            </li>
+            <li class="nav-link">
+              <a href="login.html" class="link">Login</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      </div>
+
+              <h2 class="about">About Us</h2>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+             <h1 class="heading-primary">
+              TULYE RESTAURANT ONLINE BOOKING AND RESERVATION
+              </h1>
+              <p class="hero-description">
+              Our story began in 2008 when four brothers opened the first Tulye Restaurant in lusaka, cairo rd, Zambia.</p>
+          
+              <p class="hero-description">Since then, we've become known for our excellent food that caters to zambians and all people from around the world.</p>
+              
+              <p class="hero-description">
+                Our customer service is friendly and our restaurants provide a warm environment where our customers can enjoy a perfect meal made with love
+              </p>
+
+              <p class="hero-description">
+               The very heart of Tulye restaurants are the memories you make with Us. They all add up to one great story: the stuff that legends are made of. 
+              </p>
+            
+               
+              </div>
+              <div class="hero-img-box">
+                <img
+                 src="IMAGES.NEW/lucas-andrade-3Uj0GwVmOeY-unsplash.jpg"
+                 class="hero-img"
+                 alt="woman enjoying food, meals in storgae container, and food bowls on table"
+                />
+               </div>
+          </div>
+      </section>
+      <!-- TESTIMONIALS -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary-testimonials">
+           <span class="subheading-2">Tulye Restaurant, More flavor,</span> <span class="subheading-3">For less!</span> 
+          </h2>
+       
+         <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" src="IMAGES.NEW/customer-1.jpg" alt="photo of customer Dave Bryson"/>
+            <blockquote class="testimonial-text">
+              Inexpensive, healthy and great-tasting meals, 
+              with just a few clicks on my phone!
+              It feels truly magical.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Lillian Phiri</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="IMAGES.NEW/customer-4.jpg" alt="photo of customer Ben Hadley"/>
+            <blockquote class="testimonial-text">
+               Tulye online restaurant is a life saver!
+               I can order my favorite meals and have delivered without any hassle.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Mirriam Banda</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="IMAGES.NEW/customer-2.jpg" alt="photo of customer Steve Miller"/>
+            <blockquote class="testimonial-text">
+              Tulye restaurant is amazing! I just started a company,
+              so there's no time for cooking. 
+              I couldn't live without my daily meals now! 
+            </blockquote>
+            <p class="testimonial-name">&mdash; Francis Chiputa</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="IMAGES.NEW/customer-3.jpg" alt="photo of customer Hannah Smith"/>
+            <blockquote class="testimonial-text">
+              having a job that is hectic means having less time.
+              Thanks to Tulye restaurant, i can order my favorite meal and have it delivered to my office.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Yousuf Mkako</p>
+          </figure>
+        </div>
+      </div> 
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/bank-phrom-OwX4DzrAOq8-unsplash.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-19.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-16.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/new.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-20.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-14.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-7.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-2.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+
+          <figure class="gallery-item">
+            <img class"food-images" src="IMAGES.NEW/gallery-8.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+        </div>
+      </section>
+
+      <!-- FEATURE SECTION -->
+    <section class="feature-section">
+      <div class="plan-sign-up grid grid--4--cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <p class="feature-title">Never cook again!</p>
+          <p class="feature-text">
+            We have you covered for all three meals of the day;
+            breakfast, lunch and dinner!
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title">Local and organic</p>
+          <p class="feature-text">
+           Our cooks only use local, fresh, and
+           organic products to prepare your meals.
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">
+            All our partners only use reusable 
+            containers to package all your meals.
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="time-outline"></ion-icon>
+          <p class="feature-title">Order from 9AM - 11PM</p>
+          <p class="feature-text">
+             We have you covered for 14 hours in the day,
+              Just by a few clicks on your phone.
+             
+          
+          </p>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div id="footer" class="footer">
+
+        <div class="container-wrap">
+          <div class="row">
+            <div class="col-footer">
+              <a id="tulye" href="#left"><h4>Tulye Restaurant</h4></a>
+              
+              <ul>
+                <li><a id="sub-footer" href="">Specials</a></li>
+                <li><a id="sub-footer" href="">Outlets</a> </li>
+                <li><a id="sub-footer" href="">Join Us</a> </li>
+              </ul>
+            </div>
+            <div class="col-footer">
+              <ul>
+                <h4>Get help</h4>
+                <li><a id="sub-footer" href="">FAQs</a> </li>
+                <li> <a id="sub-footer" href="">Order Online</a></li>
+                <li><a id="sub-footer" href="">Weekend Competition</a></li>
+              </ul>
+            </div>
+            <div class="col-footer">
+               <h4>Reservation</h4>
+              <ul>
+                <li><a id="sub-footer" href="">Tables</a></li>
+                <li><a id="sub-footer" href="">Events</a></li>
+                <li><a id="sub-footer" href="">Bookings</a></li>
+              </ul>
+            </div>
+              <div class="col-footer">
+                <ul>
+                  <h4>Follow Us</h4>
+                  <li><a id="social" href=""><spa class="fa fa-facebook"style="color:#4267B2;"></spa>Tulye Restaurant</a></li>
+                  <li><a id="social" href=""><span class="fa fa-twitter" style="color:#1DA1F2"></span>@tulye_restaurant</a></li>
+                  <li><a id="social" href=""><span class="fa fa-instagram" style="color:crimson"></span>@tulye_eat</a></li>
+                  <li><a id="social" href=""><span class="fa fa-linkedin" style="color:#0072b1"></span></a>Tulye Restaurant</li>
+                </ul>
+                
+                </div>
+                    <h6>All rights reserved Cavendish University group project &#169 coprights of class 2022 software engineering.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+
+
+
+  </div>
+
+        </div>
+
+
+
+      </div>
+
+
+     </div>
+
+</div>
+    </section>
+
+    <!-- LINK TO THE ICONS ON FEATURE SECTION -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

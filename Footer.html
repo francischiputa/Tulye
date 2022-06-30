@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulye Restaurant</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu{
+        background:black;
+        
+        
+      }
+
+      .nav-link{
+        margin: 2px;
+        padding: 3px;
+        background-color: #000000;
+        
+        
+        
+        
+      }
+      .top-bar{
+          background-color:#000000;
+      }
+      .menu-text{
+          background: black;
+          color: white;
+      }
+      .link{
+        color: white;
+      }
+      .top-bar-left{
+        background-color: black;
+      }
+      .nav-link:hover{
+        background-color:hsl(120, 92%, 39%);
+        
+      }
+      .menu-text:hover{
+          background-color: hsl(120, 92%, 39%);;
+      }
+    
+      /* showcase*/
+      .container{
+        
+            background: url("Images/The-Best-Food-In-The-World-By-Country-1.png");
+            background-attachment: fixed;
+            background-position: cover;
+          
+            width: 100%;
+            height: 600px;
+      }
+     .sign-up{
+        width: 180px;
+        height: 70px;
+        margin: 30%;
+        margin-top:10px;
+        margin-left: 12%;
+        padding: 12px;
+        border-radius: 15px;
+        background-color:hsl(120, 92%, 39%);
+        color: white;
+        cursor: pointer;
+     }
+     
+     .tody-special{
+        text-align: center;
+        padding: 12px;
+     }
+     .flex-container{
+        margin-top: 54px;
+     }
+     .cards{
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       position: relative;
+       
+     }
+    
+    .catch{
+      color:hsl(120, 92%, 39%);
+      margin-left: 50px;
+      padding-left: 60px;
+      padding-top: 80px;
+      
+      
+      
+    }
+    .btn-cart{
+      color: white;
+      cursor: pointer;
+      background-color: none;
+    }
+    .button{
+        background-color: green;
+        margin: 7px;
+        padding: 7px;
+    }
+
+    #for-less{
+        color: rgb(238, 138, 24);
+        padding-left: 20px;
+    }
+    .have-it{
+      color: green;
+    }
+    .checked{
+      color: orange;
+    }
+    span{
+        margin: 5px;
+    }
+    h4,h6{
+        margin: 5px;
+    }
+    .images{
+        width: 480px;
+        height: 282;
+    }
+    @media screen and (max-width: 800px) {
+  .cards{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+#col{
+    background-color: blue;
+    border: solid;
+}
+#sign-div{
+    background: url('Images/Butter-Chicken-.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-size: contain;
+    background-size: cover;
+    background-size: 100%;
+    
+        
+    
+}
+
+form{
+    margin-top: 50px;
+    text-align: end;
+    position: relative;
+    
+    left: 60%;
+    top: 20%;
+    margin-top: 20px;
+    display: block;
+    text-align: end;
+    align-items: end;
+    width: 350px;
+    height: 650px;
+    color: white;
+    
+    
+      
+}
+.input{
+    position: relative;
+    left: 35%;
+    width: 100%;
+    margin-top: 9%;
+    background: transparent;
+    border-style: none;
+    outline-style: none;
+    border-bottom: solid white;
+   
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-top: 9%;
+    background-color: green;
+    color: white;
+    border-radius: 30%;
+}
+form h2{
+      border-bottom: 7px solid green;
+      margin-bottom: 8px;
+}
+.input-btn{
+          width: 50%;
+          border-radius: 5%;
+          cursor: pointer;
+}
+.card-divider{
+      color: white;
+}
+#footer{
+  background-color: #181a1a;
+  background-size: contain;
+  background-image: cover;
+  color: white;
+  margin-top: 0px;
+  height: 220px;
+  width: 100%;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.col-footer{
+    width: 25%;
+    padding: 0 15px;
+
+}
+#tulye{
+      color: white;
+      cursor: pointer;
+}
+#social{
+      color: white;
+      font-size: 18px;
+}
+#sub-footer{
+      color: white;
+      font-size: 18px;
+      font-weight: 100;
+}
+h4{
+  border-bottom: 7px solid green;
+}
+    </style>
+</head>
+<body>
+             <!--Footer-->
+             <div id="footer" class="footer">
+
+                <div class="container-wrap">
+                  <div class="row">
+                    <div class="col-footer">
+                      <a id="tulye" href="#left"><h4>Tulye Restaurant</h4></a>
+                      
+                      <ul>
+                        <li><a id="sub-footer" href="">Specials</a></li>
+                        <li><a id="sub-footer" href="">Outlets</a> </li>
+                        <li><a id="sub-footer" href="">Join Us</a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-footer">
+                      <ul>
+                        <h4>Get help</h4>
+                        <li><a id="sub-footer" href="">FAQs</a> </li>
+                        <li> <a id="sub-footer" href="">Order Online</a></li>
+                        <li><a id="sub-footer" href="">Weekend Competition</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-footer">
+                       <h4>Reservation</h4>
+                      <ul>
+                        <li><a id="sub-footer" href="">Tables</a></li>
+                        <li><a id="sub-footer" href="">Events</a></li>
+                        <li><a id="sub-footer" href="">Bookings</a></li>
+                      </ul>
+                    </div>
+                      <div class="col-footer">
+                        <ul>
+                          <h4>Follow Us</h4>
+                          <li><a id="social" href=""><spa class="fa fa-facebook"style="color:#4267B2;"></spa>Tulye Restaurant</a></li>
+                          <li><a id="social" href=""><span class="fa fa-twitter" style="color:#1DA1F2"></span>@tulye_restaurant</a></li>
+                          <li><a id="social" href=""><span class="fa fa-instagram" style="color:crimson"></span>@tulye_eat</a></li>
+                          <li><a id="social" href=""><span class="fa fa-linkedin" style="color:#0072b1"></span></a>Tulye Restaurant</li>
+                        </ul>
+                        
+                        </div>
+                            <h6>All rights reserved Cavendish University group project &#169 coprights of class 2022 software engineering.</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+                
+              </div>
+    
+    
+    
+          </div>
+    
+                </div>
+    
+    
+    
+              </div>
+    
+       
+             </div>
+             
+      
+     
+          
+    
+      
+        </div>
+    
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.js"></script>
+            <script src="js/app.js"></script>
+</body>
+</html>
